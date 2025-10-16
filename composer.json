@@ -1,0 +1,13 @@
+{
+  "name": "projetnosql/php-mvc",
+  "description": "Projet To Do List NoSQL",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/",
+      "Config\\": "config/"
+    }
+  },
+  "require": {
+    "mongodb/mongodb": "^1.20"
+  }
+}
