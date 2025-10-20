@@ -16,4 +16,3 @@ class ErrorController
         exit();
     }
 }
-
