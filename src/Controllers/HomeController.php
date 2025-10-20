@@ -13,6 +13,13 @@ class HomeController extends AbstractController
         //$resultTasks = $task->getAllTasks();
         $tasksUrgent = $task->getTasksByStatus('Urgent');
         //$this->debug($tasksUrgent);
+        $tasksToDo = $task->getTasksByStatus('A faire');
+        //$this->debug($tasksToDo);
+        $tasksWip = $task->getTasksByStatus('En cours');
+        //$this->debug($tasksWip);
+        $tasksDone = $task->getTasksByStatus('Terminé');
+        //$this->debug($tasksDone);
+        
 
         if (isset($_POST['editStatus'])) {
             $id = htmlspecialchars($_POST['id']);
